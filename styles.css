@@ -56,3 +56,8 @@ img {
 .sidebar img {
     filter: brightness(0) invert(1);
 }
+
+button:has(img) {
+    background: none;
+    border: none;
+}
