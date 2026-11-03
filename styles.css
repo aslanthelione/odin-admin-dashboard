@@ -1,0 +1,45 @@
+:root {
+    --blue: #1785c0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    border: 1px solid red;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background: var(--blue);
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: min-content 1fr;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.card {
+    padding: 15px;
+}
