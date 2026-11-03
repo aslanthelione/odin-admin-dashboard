@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -53,6 +53,6 @@ img {
     width: 48px;
 }
 
-img {
+.sidebar img {
     filter: brightness(0) invert(1);
 }
