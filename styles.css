@@ -1,5 +1,5 @@
 :root {
-    --blue: #1785c0;
+    --blue: #208bc3;
 }
 
 * {
@@ -46,11 +46,19 @@ main {
 }
 
 img {
-    width: 32px;
+    width: 24px;
 }
 
 .logo img {
-    width: 48px;
+    width: 36px;
+}
+
+.logo {
+    display: flex;
+}
+
+.sidebar {
+    padding: 8px;
 }
 
 .sidebar img {
@@ -60,4 +68,37 @@ img {
 button:has(img) {
     background: none;
     border: none;
+}
+
+.actions button {
+    background: var(--blue);
+    border: none;
+    width: 84px;
+    height: 32px;
+    border-radius: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+header>div:first-child {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+input[type=search] {
+    background: #cdd5da;
+    border: none;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: right;
+    gap: 16px;
+}
+
+.card {
+    height: 200px;
 }
