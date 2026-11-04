@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -55,6 +55,44 @@ body {
 
 .sidebar img {
     filter: brightness(0) invert(1);
+}
+
+/* header */
+
+header {
+    background: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.2);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 48px;
+}
+
+#search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#search input {
+    flex: 1;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 48px 24px;
+}
+
+.actions {
+    margin-left: auto;
+    display: flex;
+    gap: 24px;
 }
 
 .container {
@@ -107,12 +145,6 @@ button:has(img) {
     border-radius: 16px;
     color: white;
     font-weight: bold;
-}
-
-header>div:first-child {
-    display: flex;
-    align-items: center;
-    padding: 8px;
 }
 
 input[type=search] {
