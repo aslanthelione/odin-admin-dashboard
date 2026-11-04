@@ -95,6 +95,25 @@ header {
     gap: 24px;
 }
 
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.icon {
+    width: 24px;
+}
+
+.avatar {
+    width: 56px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f9c80e
+}
+
+
 .container {
     display: grid;
     grid-template-rows: min-content 1fr;
@@ -130,8 +149,6 @@ img {
     display: flex;
 }
 
-
-
 button:has(img) {
     background: none;
     border: none;
@@ -162,4 +179,8 @@ input[type=search] {
 
 .card {
     height: 200px;
+}
+
+.trending-entry {
+    display: flex;
 }
