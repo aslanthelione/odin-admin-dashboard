@@ -1,6 +1,7 @@
 :root {
     --blue: #208bc3;
     --gray: #cdd5da;
+    --yellow: #f9c80e;
 }
 
 * {
@@ -23,6 +24,11 @@ img {
     max-width: 100%;
 }
 
+button:has(img) {
+    background: none;
+    border: none;
+}
+
 .icon {
     width: 24px;
 }
@@ -32,7 +38,7 @@ img {
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
-    background: #f9c80e
+    background: var(--yellow);
 }
 
 /* sidebar */
@@ -102,6 +108,11 @@ header {
 
 #search input {
     flex: 1;
+    background: var(--gray);
+    border: none;
+    height: 32px;
+    border-radius: 16px;
+    padding-left: 16px;
 }
 
 .welcome {
@@ -117,6 +128,18 @@ header {
     gap: 24px;
 }
 
+.actions button {
+    background: var(--blue);
+    border: none;
+    width: 84px;
+    height: 32px;
+    border-radius: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
 main {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 320px;
@@ -128,12 +151,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin: 16px;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    padding: 16px 48px;
     margin-top: 12px;
 }
 
@@ -143,7 +168,7 @@ main {
     gap: 8px;
     padding: 32px;
     background: white;
-    border-left: 12px solid #f0b429;
+    border-left: 12px solid var(--yellow);
     border-radius: 8px;
     box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
 }
@@ -155,31 +180,23 @@ main {
     gap: 16px;
 }
 
-
-
-button:has(img) {
-    background: none;
-    border: none;
+.announcements-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px (0 0 0 / 0.15);
+    padding: 8px 24px;
+    margin-top: 12px;
 }
 
-.actions button {
-    background: var(--blue);
-    border: none;
-    width: 84px;
-    height: 32px;
-    border-radius: 16px;
-    color: white;
-    font-weight: bold;
+.announcements-card>div {
+    padding: 16px 0;
 }
 
-input[type=search] {
-    background: var(--gray);
-    border: none;
-    height: 32px;
-    border-radius: 16px;
+.announcements-card>div+div {
+    border-top: 2px solid #ccc;
 }
-
-
 
 .trending-entry {
     display: flex;
